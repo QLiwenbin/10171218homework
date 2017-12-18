@@ -1,0 +1,389 @@
+.logo{
+    width:100%;
+    height:130px;
+    background: #fff;
+    position: relative;
+}
+.logo img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.logo span{
+    position: absolute;
+    line-height:100px;
+    left:450px;
+    text-align: center;
+    font-size:30px ;
+    color: #000;
+}
+.nav{
+    width:100%;
+    height:46px;
+    font-size: 14px;
+    background:#71A51D;
+}
+.nav li{
+    float: left;
+    width:128px;
+    height:46px;
+}
+.nav a{
+    display: block;
+    width:128px;
+    height:46px;
+    color:#fff;
+    line-height:46px;
+    text-align: center;
+}
+.nav li:hover .bian1{
+    color:#f10215;
+}
+.lunbo{
+    width:1010px;
+    height:400px;
+    margin:0 auto;
+    position: relative;
+}
+.imgs , .imgs li{
+    width:100%;
+    height:100%;
+}
+.imgs img{
+    transition: all .75s;
+}
+.imgs img{
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.lunbo .zuo,.lunbo .you{
+    width:42px;
+    height:43px;
+    font-size: 40px;
+    color: #B1B5AC;
+    line-height:43px;
+    text-align: center;
+    background:rgba(0,0,0,0.2);
+    transition: all 0.5s;
+}
+.zuo:hover{
+    color: #fff;
+    background:rgba(0,0,0,0.7);
+}
+.you:hover{
+    color: #fff;
+    background:rgba(0,0,0,0.7);
+}
+.zuo{
+    position: absolute;
+    left:0;
+    top:180px;
+}
+.you{
+    position: absolute;
+    right:0;
+    top:180px;
+}
+.dian{
+    width:auto;
+    height:14px;
+    position: absolute;
+    bottom:20px;
+    left:500px;
+    /*background: #fff;*/
+}
+.dian .dian-active{
+    background: #00a7fd;
+}
+.dian li{
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background: #fff;
+    float: left;
+}
+.dian li:first-child{
+    margin-right:10px;
+}
+.ggss{
+    width:100%;
+    height:42px;
+    background:#71A51D;
+    line-height:42px;
+}
+.ggss-l{
+    width:65%;
+    height:42px;
+    font-size: 12px;
+    float: left;
+    color: #fff;
+    /*padding:0 20px;*/
+}
+.ggss-l i{
+    margin-left: 20px;
+}
+.ggss-l a{
+    width:560px;
+    height:100%;
+    line-height: 43px;
+    color: #fff;
+    float:right;
+}
+.ggss-r{
+    width:35%;
+    height:100%;
+    float: right;
+}
+.ggss-r input{
+    width:250px;
+    height:43px;
+    float: left;
+}
+.ggss-r select{
+    width:105px;
+    height: 43px;
+    background:lightblue;
+    float: left;
+    color:#fff;
+}
+.jieshao{
+    width:100%;
+    padding:10px 10px 10px 0;
+}
+.jieshao span{
+    display: block;
+    font-size:34px;
+    margin-top:40px;
+    text-align: center;
+    color: #71A51D;
+}
+.jieshao i{
+    display: block;
+    font-size: 34px;
+    color: #71A51D;
+    margin:30px auto;
+    margin-left:130px;
+    text-align: center;
+}
+.jianj{
+    width:100%;
+    height: 250px;
+    box-sizing:border-box;
+    padding:10px;
+    background:#EFEFEF;
+}
+.jianj img{
+    display: inline-block;
+    width:250px;
+    height:230px;
+}
+.jianj div{
+    width:730px;
+    height:250px;
+    float: right;
+}
+.jianj p{
+    font-size: 12px;
+    line-height:27px;
+    color: #33696A;
+}
+.xiangqing{
+    display: inline-block;
+    width: 110px;
+    height:35px;
+    background: #71A51D;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height:35px;
+    font-size:15px;
+    margin-left: 600px;
+    margin-top:30px;
+}
+.lyjs{
+    box-sizing: border-box;
+    width:100%;
+    height:300px;
+    padding:5px;
+}
+.ly-lb{
+    width:150px;
+    height:300px;
+    background-color: #989ff9;
+    float: left;
+}
+.ly-left{
+    width:150px;
+    height:300px;
+    background: url("../img/left.png") no-repeat;
+}
+.ly-left a{
+    font-size: 14px;
+    display: block;
+    height: 250px;
+    overflow: hidden;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-top:50px;
+    margin-left:65px;
+    margin-right:65px;
+    color:#fff;
+}
+.ly-right{
+    width:870px;
+    height:300px;
+    box-sizing: border-box;
+    border:2px solid #6A3F75;
+    border-left:0;
+    padding: 22px 15px 23px;
+    float: right;
+}
+.tuwen{
+    width:268px;
+    height:240px;
+    background-color: #efefef;
+    box-sizing: border-box;
+    float: left;
+    margin-right:10px;
+}
+.tu,.tu img{
+    width:268px;
+    height:200px;
+}
+.wen{
+    width:100%;
+    height: 40px;
+    font-size:12px;
+    text-align: center;
+    line-height:40px;
+}
+.wen a {
+    color:#000;
+}
+.wen:hover .bian{
+    color:#71A51D;
+}
+.lianxi{
+    margin-top:50px;
+    width:100%;
+    box-sizing: border-box;
+    padding: 10px 10px 0;
+    background-color: #fff;
+    height:300px;
+}
+.lianxi img{
+    /*display: block;*/
+    width:670px;
+    height:290px;
+    float: left;
+}
+#lxwm{
+    width:330px;
+    height:290px;
+    background:#6A3F75;
+    float: right;
+}
+#lxwm a{
+    display: block;
+    color: #fff;
+    margin-top:5px;
+    font-size:30px;
+    text-align:center;
+}
+#lxwm span{
+    display: block;
+    font-size:14px;
+    text-align:left;
+    line-height:5px;
+    margin-left:10px;
+    color: #fff;
+}
+.box{
+    width:100%;
+    height:240px;
+}
+.tuwen1{
+    width:246px;
+    margin-left: -2px;
+}
+.tu{
+    overflow: hidden;
+}
+.tuwen1:nth-child(1){
+    margin-left:10px;
+}
+.tuwen1 img{
+    width:246px;
+    transition:all 0.5s;
+}
+.tuwen1 .tu,.tuwen1 .wen{
+    width:246px;
+}
+.tuwen1 img:hover{
+    transform: scale(1.2);
+}
+.chakan{
+    width:100%;
+    height:50px;
+}
+.chakan a{
+    display: block;
+    width: 110px;
+    height:35px;
+    background: #71A51D;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height:35px;
+    font-size:15px;
+    margin:20px auto;
+}
+/*版权信息开始*/
+.youqing{
+    width:100%;
+    height:auto;
+    background: #71A51D;
+    overflow: hidden;
+}
+.lj-box{
+    width:100%;
+    height:50px;
+    padding: 10px 20px;
+    border-bottom:1px solid #fff;
+    box-sizing: border-box;
+}
+.lj-box span{
+    display: block;
+    width: 60px;
+    height:24px;
+    font-size: 12px;
+    line-height: 24px;
+    color:#fff;
+}
+.banquan , .banquan ul{
+    width:100%;
+    height:100px;
+    background: #71A51D;
+}
+.banquan ul{
+    box-sizing: border-box;
+    padding:15px;
+}
+.banquan li{
+    float: left;
+}
+.banquan a{
+    margin-left:10px;
+}
+.banquan li span , .banquan li a{
+    display:block;
+    font-size:12px;
+    line-height: 16px;
+    color: #FFF;
+}
+
+/*版权信息结束*/

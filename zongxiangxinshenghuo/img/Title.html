@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)file:///C:/Users/%E6%9D%8E%E5%A4%A7%E4%BB%99/Desktop/JS/2017.12.1%20%20BOM/back/goback.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width:500px;
+            height:2000px;
+            border:5px solid #000;
+            margin: 0 auto;
+        }
+        .top{
+            width:100px;
+            height:100px;
+            background: #7190ed;
+            border-radius: 50%;
+            position:fixed;
+            right:10px;
+            bottom: 10px;
+            text-align: center;
+            line-height: 100px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="top">返回顶部</div>
+
+
+<script>
+    window.onload =  function () {
+        var gao = document.body;
+        var top = document.querySelector('.top');
+        if(gao > 300){
+            top.style.display= block ;
+        }
+    }
+</script></body></html>

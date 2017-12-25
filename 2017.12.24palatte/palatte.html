@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="palatte.js"></script>
+    <script src="index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .box {
+            width: 80%;
+            /*background:#f5f5f5;*/
+            margin: 0 auto;
+        }
+        .gongneng {
+            width: 1040px;
+            height: 150px;
+            background: #fff;
+            margin: 0 auto;
+        }
+
+        .huaban {
+            width: 1040px;
+            height: 580px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        canvas {
+            z-index: 10;
+        }
+
+        .button {
+            width: 25%;
+            height: 100%;
+            background: blue;
+            float: left;
+        }
+
+        .button li {
+            width: 60px;
+            height: 35px;
+            margin: 20px 30px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 35px;
+            background: #0AA6E8;
+            color: #fff;
+            float: left;
+        }
+
+        .draw {
+            width: 40%;
+            height: 100%;
+            background: blue;
+            float: left;
+        }
+
+        .draw li {
+            width: 80px;
+            height: 35px;
+            background: #0AA6E8;
+            float: left;
+            margin: 20px 10px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 35px;
+            color: #fff;
+        }
+
+        .check {
+            border: 1px solid #000;
+        }
+
+        .yang {
+            width: 35%;
+            height: 100%;
+            background: blue;
+            float: left;
+        }
+
+        .yang li {
+            width: 60px;
+            height: 35px;
+            background: #0AA6E8;
+            float: left;
+            margin: 20px 10px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 35px;
+            color: #fff;
+        }
+        .bians{
+            width:100%;
+        }
+        .eraser1{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0;
+            left: 0;
+            background:rgba(0,0,0,0.3);
+            display: none;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .clip{
+            width:20px;
+            height:20px;
+            border: 1px dashed #000;
+            position: absolute;
+            left:0;
+            top:0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="gongneng">
+        <ul class="button">
+            <li id="new">新建</li>
+            <li id="clipbtn">裁剪</li>
+            <li id="prev">撤销</li>
+            <li id="back"><a href="">保存</a></li>
+        </ul>
+        <ul class="draw">
+            <li id="line" class="check">画线</li>
+            <li id="circular">画圆</li>
+            <li id="pencil">铅笔</li>
+            <li id="rectangle">画矩形</li>
+            <li id="polygon">多边形</li>
+            <li id="Polygonj">多角形</li>
+            <li id="dashed">虚线</li>
+            <li id="eraser">橡皮</li>
+        </ul>
+        <ul class="yang">
+            <li class="style style" id="fill">填充</li>
+            <li class="style" id="stroke">描边</li>
+            <li>线宽</li>
+            <li class="font">文字</li>
+            <li><input type="color" id="fillStyle"></li>
+            <li><input type="color" id="strokeStyle"></li>
+            <li><input type="number" class="bians"></li>
+        </ul>
+    </div>
+    <div class="huaban">
+        <div class="mask"></div>
+        <div class="eraser1"></div>
+        <div class="clip"></div>
+        <canvas width="1040" height="580"></canvas>
+    </div>
+</div>
+</body>
+
+<head>
